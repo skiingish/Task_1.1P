@@ -1,8 +1,44 @@
+/* Global */
 
 body {
     margin: 0;
     height: 100%;
 }
+
+.line-break {
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Nav Bar */ 
+
+.nav-bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(179, 179, 179);
+}
+  
+.nav-bar li {
+    float: left;
+}
+  
+.nav-bar li a {
+    display: block;
+    color: rgb(22, 22, 22);
+    text-align: center;
+    padding: 20px 25px;
+    text-decoration: none;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+  
+.nav-bar li a:hover {
+    background-color: rgb(245, 245, 245);
+}
+
+/* Banner Image */
 
 .banner-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./images/mountains-1412683_1280.png");
@@ -13,7 +49,9 @@ body {
     background-size: cover;
 }
 
-.image-overlay {
+/* Banner Image Text Overlay */
+
+.image-message-overlay {
     position: absolute;
     bottom: 50vh;
     background: rgb(0, 0, 0);
@@ -28,35 +66,12 @@ body {
     text-align: center;
 }
 
-/* When you mouse over the container, fade in the overlay title */
-.hero-image-container:hover .image-overlay {
+/* Fade in hello message on banner image */
+.banner-image-container:hover .image-message-overlay {
     opacity: 1;
 }
 
-.nav-bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: rgb(179, 179, 179);
-}
-  
-li {
-    float: left;
-}
-  
-li a {
-    display: block;
-    color: rgb(22, 22, 22);
-    text-align: center;
-    padding: 20px 25px;
-    text-decoration: none;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-  
-li a:hover {
-    background-color: rgb(245, 245, 245);
-}
+/* Profile Section */
 
 .profile-img {
     background-image: url("./images/profile-picture.jpg");
@@ -76,11 +91,7 @@ li a:hover {
     text-align: center;
 }
 
-.line-break {
-    width: 20%;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* Project Gallery */
 
 #projects-container {
     border: 5px solid #3F3F3F;
@@ -135,6 +146,8 @@ li a:hover {
     width: 100px;
 }
 
+/* Photo Gallery */
+
 .photos-title {
     text-align: center;
 }
@@ -163,6 +176,8 @@ li a:hover {
     height: auto;
     width: 160px;
 }
+
+/* Responsive Design */
 
 @media screen and (max-width: 800px) {
     #photo-gallery {
